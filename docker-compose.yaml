@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - airdrop-database:/app/database.db
+      - airdrop-modules:/app/modules/
+      - airdrop-telegram-accounts:/app/telegram_accounts/
+
+volumes:
+  airdrop-database:
+
+  airdrop-modules:
+
+  airdrop-telegram-accounts:
+

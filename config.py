@@ -20,7 +20,7 @@ config = {
         # Your unique Telegram API Hash. Keep this value secure and do not share it publicly.
         "api_hash": os.environ['API_HASH'],  # Your unique Telegram API Hash
     },
-    "auto_update": os.environ['AUTO_UPDATE'] == 'true',  # Automatically update the main bot. If set to True, the bot will restart after an update. Ensure you run the bot with start_linux.sh or start_windows.cmd.
+    "auto_update": True,  # Automatically update the main bot. If set to True, the bot will restart after an update. Ensure you run the bot with start_linux.sh or start_windows.cmd.
     "auto_update_modules": True,  # Automatically update bot modules.
     "update_check_interval": 3600,  # Interval in seconds to check for updates. Default: 3600 seconds (1 hour).
     "run_delay": 60,  # Delay in seconds before starting the bot modules. Default: 60 second.

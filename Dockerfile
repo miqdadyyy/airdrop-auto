@@ -8,7 +8,11 @@ RUN apt-get update && \
 
 WORKDIR /app
 
-COPY MasterCryptoFarmBot/* /app
+COPY . .
+
+RUN git submodule update --init --recursive
+
+WORKDIR /app/MasterCryptoFarmBot
 
 COPY config.py . 
 
