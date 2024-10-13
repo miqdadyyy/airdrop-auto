@@ -12,6 +12,8 @@ COPY . .
 
 RUN git submodule update --init --recursive
 
+RUN mkdir -p /app/db && touch /app/db/database.db && ln -s /app/db/database.db /app/MasterCryptoFarmBot/database.db 
+
 WORKDIR /app/MasterCryptoFarmBot
 
 COPY config.py . 

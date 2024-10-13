@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - airdrop-database:/app/MasterCryptoFarmBot/database.db
+      - airdrop-database:/app/db/
       - airdrop-modules:/app/MasterCryptoFarmBot/modules/
       - airdrop-telegram-accounts:/app/MasterCryptoFarmBot/telegram_accounts/
 
